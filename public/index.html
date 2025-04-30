@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Reclamações - Companhias Aéreas</title>
+</head>
+<body>
+    <h1>Registrar Reclamação</h1>
+    <form id="reclamacaoForm" enctype="multipart/form-data">
+        <input type="text" id="nome" placeholder="Nome" required><br>
+        <input type="email" id="email" placeholder="Email" required><br>
+        <select id="companhia" required>
+            <option value="">Selecione a companhia</option>
+            <option value="Gol">Gol</option>
+            <option value="Latam">Latam</option>
+            <option value="Azul">Azul</option>
+        </select><br>
+        <textarea id="mensagem" placeholder="Descreva sua reclamação" required></textarea><br>
+        <input type="file" id="arquivo"><br>
+        <button type="submit">Enviar</button>
+        <p id="responseMessage"></p>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+</html>
